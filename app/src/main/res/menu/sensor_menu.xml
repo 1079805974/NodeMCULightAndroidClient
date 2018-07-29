@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/light_sensor_item"
+        android:title="亮度传感器"/>
+
+    <item
+        android:id="@+id/infrared_sensor_item"
+        android:title="红外传感器"/>
+</menu>

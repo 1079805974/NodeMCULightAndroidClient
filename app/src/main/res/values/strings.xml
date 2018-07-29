@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LampSettingsUI</string>
+    <string name="lamp_name">灯名：</string>
+    <string name="lamp_name_hint">name</string>
+    <string name="over_setting">完成</string>
+    <string name="open_switch">开关：</string>
+    <string name="time_setting">定时：</string>
+</resources>

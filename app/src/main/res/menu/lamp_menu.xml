@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/swap_lamp"
+        android:title="选择智能灯"
+        android:icon="@drawable/ic_swap_24dp"
+        app:showAsAction="ifRoom|withText">
+
+        <menu>
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/add_lamp"
+        android:title="增添新智能灯"
+        android:icon="@drawable/ic_add_48dp"
+        app:showAsAction="ifRoom|withText">
+
+    </item>
+
+    <item android:id="@+id/remove_lamp"
+        android:title="断开当前灯"
+        android:icon="@drawable/ic_delete_black_24dp"
+        app:showAsAction="withText|ifRoom"
+        />
+
+</menu>

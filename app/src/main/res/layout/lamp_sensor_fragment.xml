@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sensor_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="25dp"
+        android:layout_margin="8dp"
+        android:text="环境亮度监测"
+        android:gravity="start|center"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sensor_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="center|start"
+            android:textColor="@color/greyNormal"
+            android:text="开关" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sensor_swap_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:text="亮度传感器"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:drawableEnd="@drawable/ic_arrow_down_24dp"
+            android:drawableTint="@color/newPrimary"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <TextView
+            android:id="@+id/infrared_sensor_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/newPrimary"
+            android:text="无人"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lamp_sensor_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+    </FrameLayout>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

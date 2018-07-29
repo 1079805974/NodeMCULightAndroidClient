@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_picker_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_alarm_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_down_24dp"
+            android:drawableTint="@color/newPrimary"
+            style="@android:style/Widget.Material.Light.TextView"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/newPink"
+            android:gravity="center"
+            android:text="选择周期" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/monday_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/tuesday_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="二"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/wednesday_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/thursday_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="四"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/friday_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="五"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/saturday_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="六"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/sunday_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TimePicker>
+
+</android.support.v7.widget.LinearLayoutCompat>
